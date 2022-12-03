@@ -3,26 +3,7 @@
     // JS loaded
     let body = document.body;
     body.classList.add('loaded');
-    window.scrollTo(0, 0);
 
-    // gsap animations
-    gsap.registerPlugin(ScrollTrigger);
-
-
-    // Animation Slide up
-    const animationUp = document.querySelectorAll('.animate-up');
-    if (animationUp) {
-        ScrollTrigger.batch(".animate-up", {
-            onEnter: elements => {
-                gsap.to(elements, {
-                    opacity: 1,
-                    y: 0,
-                    stagger: 0.12
-                });
-            },
-            once: false
-        });
-    }
 
     const memberSwiper = document.querySelector('#memberSwiper');
     if (memberSwiper) {
