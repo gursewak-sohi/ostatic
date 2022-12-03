@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ostatic</title>
+    <link rel="shortcut icon" href="assets/images/svg/favicon.svg" />
+    <!-- Do not add Bootstrap CSS on this page -->
+    <!-- Bundle CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header @click.away="showMenu = false" x-data="{showMenu: false}" class="header-section">
+        <div class="container">
+            <div class="header-block">
+                <a class="logo" href="index.html">
+                    <img src="assets/images/svg/logo.svg" width="110" height="26" alt="logo" />
+                </a>
+                <button @click="showMenu = !showMenu;" type="button" class="btn btn-toggle">
+                    <img src="assets/images/svg/menu.svg" alt="menu"/>
+                </button>
+                <div x-transition x-show="showMenu || window.innerWidth > 767" class="header-collpase" id="menu">
+                    <div class="header-content">
+                        <div class="header-search">
+                            <input type="text" placeholder="Search our open help library" />
+                            <button type="button" class="btn">
+                                <img src="assets/images/svg/search.svg" alt="search"/>
+                            </button>
+                        </div>
+                        <div class="header-buttons">
+                            <a href="/account/login" class="btn btn-md btn-white">Sign In</a>
+                            <a href="/account/signup" class="btn btn-md btn-primary">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-block">
+                    <h1 class="animate-up">A top community for open-source help</h1>
+                    <p class="animate-up">Rate and review top research, software, list alternatives, answer user questions and much more... Share your insights!</p>
+                    <div class="animate-up">
+                        <a class="btn btn-md btn-primary" href="/account/signup">Join Ostatic</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog-section">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="badge animate-up">Blog</div>
+                    <h2 class="animate-up">Latest blog</h2>
+                    <p class="animate-up">The latest in open-source news and happenings. Researched and written by our top members.</p>
+                </div>
+                <div class="blog-block">
+                    <div class="blog-item animate-up">
+                        <div class="blog-header">
+                            <img src="assets/images/blog/chrome.png" width="164" height="164" alt="blog" />
+                        </div>
+                        <div class="blog-body">
+                            <h4>Can Low-Cost Chromebooks Actually Replace MacBooks?</h4>
+                            <div class="author">By Sam Dean</div>
+                            <p>Recently, we've been reporting on how Google is aggressively pushing Chrome OS, and the cloud-centric operating system is arriving on machines that are not only low priced, but Google is offering free incentives worth more
+                                than the computers running Chrome OS. We covered the arrival of Samsung's new Chromebook portable computer running Google's Chrome OS and selling for the strikingly low price of $249. And now, Acer is out with a new C7…
+                            </p>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="badge">Chrome</div>
+                            <a class="link" href="/blog/can-low-cost-chromebooks-actually-replace-macbooks">Read Story</a>
+                        </div>
+                    </div>
+                    <div class="blog-item animate-up">
+                        <div class="blog-header">
+                            <img src="assets/images/blog/Apache_Spark_logo.png" width="265" height="138" alt="blog" />
+                        </div>
+                        <div class="blog-body">
+                            <h4>From Spark Summit: What You Need to Know</h4>
+                            <div class="author">By Sam Dean</div>
+                            <p>As we've been reporting in conjunction with Spark Summit this week in San Francisco, the Big Data and Hadoop communities are becoming increasingly interested in Apache Spark, an open source data analytics cluster computing
+                                framework originally developed in the AMPLab at UC Berkeley. At Spark Summit. IBM, Microsoft and other organizations upped their antes on Spark, delivering new initiatives and tools. </p>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="badge">SPARK</div>
+                            <a class="link" href="/blog/dispatches-from-spark-summit-what-you-need-to-know">Read Story</a>
+                        </div>
+                    </div>
+                    <div class="blog-item animate-up">
+                        <div class="blog-header">
+                            <img src="assets/images/blog/pngegg.png" width="135" height="164" alt="blog" />
+                        </div>
+                        <div class="blog-body">
+                            <h4>Enhanced Fedora Fusion Linux Mere Weeks Away</h4>
+                            <div class="author">By Susan Linton</div>
+                            <p>One of the main complaints with Fedora is the lack of proprietary drivers and multimedia support. That's where Fusion comes in. Fusion Linux aims to ship all the best software that will make for a superior desktop experience.
+                                The upcoming version, based on the new Fedora 14, is estimated to be about two or three weeks away, but early testers can try the release candidate announced today.</p>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="badge">LINUX</div>
+                            <a class="link" href="/blog/enhanced-fedora-fusion-linux-14-mere-weeks-away">Read Story</a>
+                        </div>
+                    </div>
+                    <div class="blog-item animate-up">
+                        <div class="blog-header">
+                            <img src="assets/images/blog/cloudera_logo_darkorange.png" width="309" height="37" alt="blog" />
+                        </div>
+                        <div class="blog-body">
+                            <h4>Cloudera Deepens Integration of Spark with Hadoop</h4>
+                            <div class="author">By Sam Dean</div>
+                            <p>Cloudera, focused on big data and Apache Hadoop, has announced that it has further matured Apache Spark integration within Hadoop environments. Spark and Hadoop are both flourishing on the big data scene. To further expand
+                                the enterprise capabilities of Spark, Cloudera has added support for Spark SQL and MLlib into Cloudera Enterprise 5.5 and CDH 5.5, which the company launched recently.</p>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="badge">CLOUDERA</div>
+                            <a class="link" href="/blog/cloudera-deepens-integration-of-spark-with-hadoop">Read Story</a>
+                        </div>
+                    </div>
+                    <div class="blog-item animate-up">
+                        <div class="blog-header">
+                            <img src="assets/images/blog/netflix-logo-png-2562.png" width="234" height="63" alt="blog" />
+                        </div>
+                        <div class="blog-body">
+                            <h4>Netflix Keeps Open Sourcing its Useful Cloud Tools</h4>
+                            <div class="author">By Sam Dean</div>
+                            <p>While cloud computing platforms make headlines every day now, including leading open source platforms such as OpenStack, it's still true that cloud computing is a young science. There is a premium on reliable, mature tools
+                                for the cloud, and a real need for tools that can usher in better security. Also, it's true that Amazon Web Services (AWS) is still the 800-pound gorilla in the cloud.</p>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="badge">NETFLIX</div>
+                            <a class="link" href="/blog/netflix-keeps-open-sourcing-its-simian-army-of-useful-cloud-tools">Read Story</a>
+                        </div>
+                    </div>
+                    <div class="blog-item animate-up">
+                        <div class="blog-header">
+                            <img src="assets/images/blog/Kodi-logo-Thumbnail-light-transparent.png" width="93" height="138" alt="blog" />
+                        </div>
+                        <div class="blog-body">
+                            <h4>Kodi Illegal, Open Source Now a Word</h4>
+                            <div class="author">By Susan Linton</div>
+                            <p>Seems the top story today was the arrest of five individuals for selling devices loaded up with Open Source Kodi. Apparently the kits came with add-ons that allowed users to stream pirated content. In other news, Merriam-Webster
+                                has added the word "Open Source" to its database of official words, along with 1000 others. Jonathan Terrasi described his Linux awakening and blogger Dedoimedo said the GNOME version of openSUSE 42.2 is better than Plasma…</p>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="badge">KODI</div>
+                            <a class="link" href="/blog/kodi-illegal-open-source-now-a-word">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Happening Section -->
+        <section class="happening-section">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="badge animate-up">LATEST</div>
+                    <h2 class="animate-up">Happening now on OStatic</h2>
+                    <p class="animate-up">Our community is always expanding Ostatic and making it easier for you to find the right research tools.</p>
+                </div>
+                <div class="happening-block">
+                    <div class="happening-item animate-up">
+                        <div class="happening-image">
+                            <img src="assets/images/happening/1.png" width="34" height="34" alt="logo" />
+                        </div>
+                        <div class="happening-text">
+                            pokemon go apk commented on Chromebooks are Spreading Out in the Educational Market
+                        </div>
+                    </div>
+                    <div class="happening-item animate-up">
+                        <div class="happening-image">
+                            <img src="assets/images/happening/2.png" width="34" height="34" alt="logo" />
+                        </div>
+                        <div class="happening-text">
+                            appvn apk commented on New Benchmarks Show Big Increases in Spark Graph Processing
+                        </div>
+                    </div>
+                    <div class="happening-item animate-up">
+                        <div class="happening-image">
+                            <img src="assets/images/happening/3.png" width="34" height="34" alt="logo" />
+                        </div>
+                        <div class="happening-text">
+                            James commented on Munich's U-turn, Fedora 27 on Halloween, Back to Linux
+                        </div>
+                    </div>
+                    <div class="happening-item animate-up">
+                        <div class="happening-image">
+                            <img src="assets/images/happening/4.png" width="34" height="34" alt="logo" />
+                        </div>
+                        <div class="happening-text">
+                            al lamb comments on Chromebooks are Spreading Out in Educational Markets
+                        </div>
+                    </div>
+                    <div class="happening-item animate-up">
+                        <div class="happening-image">
+                            <img src="assets/images/happening/5.png" width="34" height="34" alt="logo" />
+                        </div>
+                        <div class="happening-text">
+                            Sam Dean updated New Benchmarks Show Big Increases in Spark Graph Processing
+                        </div>
+                    </div>
+                    <div class="happening-item animate-up">
+                        <div class="happening-image">
+                            <img src="assets/images/happening/6.png" width="34" height="34" alt="logo" />
+                        </div>
+                        <div class="happening-text">
+                            Blender was added as a featured software on Ostatic
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Entries Section -->
+        <section class="entries-section">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="badge animate-up">TOP</div>
+                    <h2 class="animate-up">Other recent entries</h2>
+                    <p class="animate-up">Browse more open-source news.</p>
+                </div>
+                <ul class="entries-block">
+                    <li class="animate-up"><a href="/blog/the-unlicense-a-license-for-no-license" class="entries-item">The Unlicense: A License for No License</a></li>
+                    <li class="animate-up"><a href="/blog/mips-advances-its-android-plans-outside-of-phones" class="entries-item">MIPS Advances its Android Plans--Outside of Phones</a></li>
+                    <li class="animate-up"><a href="/blog/debian-project-lead-snappy-and-mir-bad-ideas" class="entries-item">Debian Project Lead: Snappy and Mir Bad Ideas</a></li>
+                    <li class="animate-up"><a href="/blog/is-mandriva-finished-this-time" class="entries-item">Is Mandriva Finished This Time?</a></li>
+                    <li class="animate-up"><a href="/blog/did-you-know-there-was-a-fork-of-mplayer" class="entries-item">Did You Know there was a Fork of MPlayer?</a></li>
+                    <li class="animate-up"><a href="/blog/terra-soft-solutions-acquired-by-fixstars" class="entries-item">Terra Soft Solutions Acquired by Fixstars</a></li>
+                    <li class="animate-up"><a href="/blog/four-open-source-blogging-clients-for-linux/" class="entries-item">Four Open Source Blogging Clients for Linux</a></li>
+                    <li class="animate-up"><a href="/blog/guest-post-yahoos-cloud-team-open-sources-traffic-server/" class="entries-item">Guest Post: Yahoo's Cloud Team Open Sources Traffic Server</a></li>
+                </ul>
+                <div class="entries-button animate-up">
+                    <button type="button" class="btn btn-light btn-more">Load More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software Section -->
+        <section class="software-section">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="badge animate-up">SOFTWARE</div>
+                    <h2 class="animate-up">Featured software</h2>
+                    <p class="animate-up">Supporting open-source projects. Without them much of this would not be possible.</p>
+                </div>
+                <ul class="software-block">
+                    <li class="animate-up">
+                        <div class="software-item">
+                            <img src="assets/images/software/blender.png" width="36" height="29" alt="icon" />
+                            <p>Blender</p>
+                            <a href="/blender" class="btn btn-primary btn-xs">Use this?</a>
+                        </div>
+                    </li>
+                    <li class="animate-up">
+                        <div class="software-item">
+                            <img src="assets/images/software/facter.png" width="30" height="30" alt="icon" />
+                            <p>Facter</p>
+                            <a href="/facter-ruby" class="btn btn-primary btn-xs">Use this?</a>
+                        </div>
+                    </li>
+                    <li class="animate-up">
+                        <div class="software-item">
+                            <img src="assets/images/software/mediawiki.png" width="34" height="30" alt="icon" />
+                            <p>MediaWiki</p>
+                            <a href="/mediawiki" class="btn btn-primary btn-xs">Use this?</a>
+                        </div>
+                    </li>
+                    <li class="animate-up">
+                        <div class="software-item">
+                            <img src="assets/images/software/drupal.png" width="28" height="32" alt="icon" />
+                            <p>Drupal</p>
+                            <a href="/drupal" class="btn btn-primary btn-xs">Use this?</a>
+                        </div>
+                    </li>
+                    <li class="animate-up">
+                        <div class="software-item">
+                            <img src="assets/images/software/ubunto.png" width="34" height="34" alt="icon" />
+                            <p>Ubuntu</p>
+                            <a href="/ubuntu" class="btn btn-primary btn-xs">Use this?</a>
+                        </div>
+                    </li>
+                    <li class="animate-up">
+                        <div class="software-item">
+                            <img src="assets/images/software/firefox.png" width="30" height="31" alt="icon" />
+                            <p>Firefox</p>
+                            <a href="/firefox" class="btn btn-primary btn-xs">Use this?</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="software-button animate-up">
+                    <button type="button" class="btn btn-light btn-more">Load More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Member Section -->
+        <section class="member-section">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="badge animate-up">TEAM</div>
+                    <h2 class="animate-up">Featured members</h2>
+                    <p class="animate-up">Top members who are passionate and advocate for open-source adoption. These members hold top contributions.</p>
+                </div>
+                <div class="member-block">
+                    <div id="memberSwiper" class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide animate-up">
+                                <div class="member-item">
+                                    <div class="member-image">
+                                        <img src="assets/images/members/susan.png" width="185" height="195" alt="avatar" />
+                                    </div>
+                                    <div class="member-name">Susan Linton</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide animate-up">
+                                <div class="member-item">
+                                    <div class="member-image">
+                                        <img src="assets/images/members/jesse.png" width="185" height="195" alt="avatar" />
+                                    </div>
+                                    <div class="member-name">Jesse Casman</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide animate-up">
+                                <div class="member-item">
+                                    <div class="member-image">
+                                        <img src="assets/images/members/paul.png" width="185" height="195" alt="avatar" />
+                                    </div>
+                                    <div class="member-name">Paul Joseph</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide animate-up">
+                                <div class="member-item">
+                                    <div class="member-image">
+                                        <img src="assets/images/members/mike.png" width="185" height="195" alt="avatar" />
+                                    </div>
+                                    <div class="member-name">Mike McCallister</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide animate-up">
+                                <div class="member-item">
+                                    <div class="member-image">
+                                        <img src="assets/images/members/leon.png" width="185" height="195" alt="avatar" />
+                                    </div>
+                                    <div class="member-name">Leon Merchi</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Community Memeber Section -->
+        <section class="community-section">
+            <div class="container">
+                <div class="section-heading light">
+                    <div class="badge badge-light animate-up">COMMUNITY</div>
+                    <h2 class="animate-up">Active members</h2>
+                    <p class="animate-up">Top-quality content comes from top open-source developers and contributors. Follow them below.</p>
+                </div>
+                <div class="community-block animate-up">
+                    <div id="communitySwiper" class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="community-item">
+                                    <div class="community-image">
+                                        <img src="assets/images/community/1.png" width="48" height="48" alt="avatar" />
+                                    </div>
+                                    <div class="community-text">
+                                        <div class="name">Mark Hinkle</div>
+                                        <div class="company">InstaSource</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="community-item">
+                                    <div class="community-image">
+                                        <img src="assets/images/community/2.png" width="48" height="48" alt="avatar" />
+                                    </div>
+                                    <div class="community-text">
+                                        <div class="name">Mark Hinkle</div>
+                                        <div class="company">InstaSource</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="community-item">
+                                    <div class="community-image">
+                                        <img src="assets/images/community/3.png" width="48" height="48" alt="avatar" />
+                                    </div>
+                                    <div class="community-text">
+                                        <div class="name">Mark Hinkle</div>
+                                        <div class="company">InstaSource</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="community-item">
+                                    <div class="community-image">
+                                        <img src="assets/images/community/4.png" width="48" height="48" alt="avatar" />
+                                    </div>
+                                    <div class="community-text">
+                                        <div class="name">Mark Hinkle</div>
+                                        <div class="company">InstaSource</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="community-item">
+                                    <div class="community-image">
+                                        <img src="assets/images/community/5.png" width="48" height="48" alt="avatar" />
+                                    </div>
+                                    <div class="community-text">
+                                        <div class="name">Mark Hinkle</div>
+                                        <div class="company">InstaSource</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="assets/images/svg/arrow-right.svg" alt="slide" />
+                        </div>
+                        <div class="swiper-button-prev">
+                            <img src="assets/images/svg/arrow-left.svg" alt="slide" />
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explore Section -->
+        <section class="explore-section">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="badge animate-up">DIRECTORY</div>
+                    <h2 class="animate-up">Explore</h2>
+                    <p class="animate-up">Visit all posts about open-source projects available on Ostatic categorized by topic</p>
+                </div>
+                <ul class="explore-block">
+                    <li class="animate-up">
+                        <a href="javascript:;" class="explore-item">Business management  </a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="explore-item">Multimedia tools</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="explore-item">Email & messaging</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="explore-item">Software development</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="explore-item">Content management</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="explore-item">Internet tools</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="explore-item">Operating systems</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="explore-item">System utilities</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="explore-item">Database systems</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="explore-item">Office tools</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="explore-item">Security & anti-virus</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="explore-item">System administration</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section class="blog-section">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="badge animate-up">RESEARCH</div>
+                    <h2 class="animate-up">Recently added material</h2>
+                </div>
+                <div class="blog-block">
+                    <div class="blog-item animate-up">
+                        <div class="blog-body">
+                            <h4>Can Low-Cost Chromebooks Actually Replace MacBooks?</h4>
+                            <div class="author">By Sam Dean</div>
+                            <p>Recently, we've been reporting on how Google is aggressively pushing Chrome OS, and the cloud-centric operating system is arriving on machines that are not only low priced, but Google is offering free incentives worth more
+                                than the computers running Chrome OS. We covered the arrival of Samsung's new Chromebook portable computer running Google's Chrome OS and selling for the strikingly low price of $249. And now, Acer is out with a new C7…
+                            </p>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="badge">Chrome</div>
+                            <a class="link" href="/essays/the-effects-of-color-on-personality-and-relationships-1">Read Story</a>
+                        </div>
+                    </div>
+                    <div class="blog-item animate-up">
+                        <div class="blog-body">
+                            <h4>From Spark Summit: What You Need to Know</h4>
+                            <div class="author">By Sam Dean</div>
+                            <p>As we've been reporting in conjunction with Spark Summit this week in San Francisco, the Big Data and Hadoop communities are becoming increasingly interested in Apache Spark, an open source data analytics cluster computing
+                                framework originally developed in the AMPLab at UC Berkeley. At Spark Summit. IBM, Microsoft and other organizations upped their antes on Spark, delivering new initiatives and tools. </p>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="badge">SPARK</div>
+                            <a class="link" href="/essays/against-animal-testing-4">Read Story</a>
+                        </div>
+                    </div>
+                    <div class="blog-item animate-up">
+                        <div class="blog-body">
+                            <h4>Enhanced Fedora Fusion Linux Mere Weeks Away</h4>
+                            <div class="author">By Susan Linton</div>
+                            <p>One of the main complaints with Fedora is the lack of proprietary drivers and multimedia support. That's where Fusion comes in. Fusion Linux aims to ship all the best software that will make for a superior desktop experience.
+                                The upcoming version, based on the new Fedora 14, is estimated to be about two or three weeks away, but early testers can try the release candidate announced today.</p>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="badge">LINUX</div>
+                            <a class="link" href="/essays/reflection-on-animal-farm-by-george-orwell-university-political-science-essay">Read Story</a>
+                        </div>
+                    </div>
+                    <div class="blog-item animate-up">
+                        <div class="blog-body">
+                            <h4>Cloudera Deepens Integration of Spark with Hadoop</h4>
+                            <div class="author">By Sam Dean</div>
+                            <p>Cloudera, focused on big data and Apache Hadoop, has announced that it has further matured Apache Spark integration within Hadoop environments. Spark and Hadoop are both flourishing on the big data scene. To further expand
+                                the enterprise capabilities of Spark, Cloudera has added support for Spark SQL and MLlib into Cloudera Enterprise 5.5 and CDH 5.5, which the company launched recently.</p>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="badge">CLOUDERA</div>
+                            <a class="link" href="/essays/the-effects-of-color-on-personality-and-relationships-1">Read Story</a>
+                        </div>
+                    </div>
+                    <div class="blog-item animate-up">
+                        <div class="blog-body">
+                            <h4>Netflix Keeps Open Sourcing its Useful Cloud Tools</h4>
+                            <div class="author">By Sam Dean</div>
+                            <p>While cloud computing platforms make headlines every day now, including leading open source platforms such as OpenStack, it's still true that cloud computing is a young science. There is a premium on reliable, mature tools
+                                for the cloud, and a real need for tools that can usher in better security. Also, it's true that Amazon Web Services (AWS) is still the 800-pound gorilla in the cloud.</p>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="badge">NETFLIX</div>
+                            <a class="link" href="/essays/against-animal-testing-4">Read Story</a>
+                        </div>
+                    </div>
+                    <div class="blog-item animate-up">
+                        <div class="blog-body">
+                            <h4>Kodi Illegal, Open Source Now a Word</h4>
+                            <div class="author">By Susan Linton</div>
+                            <p>Seems the top story today was the arrest of five individuals for selling devices loaded up with Open Source Kodi. Apparently the kits came with add-ons that allowed users to stream pirated content. In other news, Merriam-Webster
+                                has added the word "Open Source" to its database of official words, along with 1000 others. Jonathan Terrasi described his Linux awakening and blogger Dedoimedo said the GNOME version of openSUSE 42.2 is better than Plasma…</p>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="badge">KODI</div>
+                            <a class="link" href="/essays/reflection-on-animal-farm-by-george-orwell-university-political-science-essay">Read Story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Database Section -->
+        <section class="database-section">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="badge animate-up">DATABASE</div>
+                    <h2 class="animate-up">Topic directory</h2>
+                    <p class="animate-up">Browse our full database of open-source academic help content written by our top contributors</p>
+                </div>
+                <ul class="database-block">
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">21st Century </a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Academia</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Academia</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Agriculture</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Americas</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">American revolutionary war</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Brain</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Aids</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Asset</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Affect</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Afterlife</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Bible</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Army</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Alcohol law</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Automotive Industry</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Board Of Directors</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Animal rights</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Advertising</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Appeal</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">American literature</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Behaviorism</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Bible</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Business Law</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Corporate Finance</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">Developmental Psychology</a>
+                    </li>
+                    <li class="animate-up">
+                        <a href="javascript:;" class="badge">DACA</a>
+                    </li>
+                </ul>
+                <div class="database-button animate-up">
+                    <button type="button" class="btn btn-light btn-more">Load More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-block">
+                    <h2 class="animate-up">OStatic Benefits</h2>
+                    <p class="animate-up">Find the Right Research, Evaluate Alternatives, Collaborate with Peers</p>
+                    <div class="animate-up">
+                        <a href="/account/signup" class="btn btn-white btn-md">Join OStatic</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-text animate-up">
+                    <h3>“Sharing is good, and with digital technology, sharing is easy.”</h3>
+                    <p>Richard Stallman</p>
+                    <div class="footer-social">
+                        <h5>Social Networks</h5>
+                        <ul>
+                            <li>
+                                <a href="javascript:;" target="_blank">
+                                    <img src="assets/images/svg/facebook.svg" alt="icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">
+                                    <img src="assets/images/svg/twitter.svg" alt="icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">
+                                    <img src="assets/images/svg/insta.svg" alt="icon" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank">
+                                    <img src="assets/images/svg/youtube.svg" alt="icon" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-links animate-up">
+                    <ul>
+                        <li>
+                            <a href="/blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/searchtag/all/project">Software</a>
+                        </li>
+                        <li>
+                            <a href="/searchtag/all/question">Questions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-links animate-up">
+                    <ul>
+                        <li>
+                            <a href="/essays">Open research</a>
+                        </li>
+                        <li>
+                            <a href="/searchtag/all/story">Blog directory</a>
+                        </li>
+                        <li>
+                            <a href="j/searchtag/all/users">Members</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-links animate-up">
+                    <ul>
+                        <li>
+                            <a href="/legal/terms">Terms of service</a>
+                        </li>
+                        <li>
+                            <a href="/legal/privacy">Privacy policy</a>
+                        </li>
+                        <li>
+                            <a href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom animate-up">
+                <p>© 2022 - OStatic - All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<!-- Apline JS -->
+<script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!--  Scroll reveal JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+
+</html>

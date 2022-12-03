@@ -1,0 +1,45 @@
+// Typography SCSS
+body {
+    color: $gray-600;
+    background-color: $bg;
+    font-family: $font-inter;
+    font-size: 15px;
+    line-height: 1.86;
+}
+
+.link {
+    color: $primary;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    &:hover {
+        color: lighten($primary, 10%)
+    }
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+h1 {
+    font-family: $font-tiemposHeadline;
+    color: $gray-800;
+    font-size: 42px;
+    line-height: 1.28;
+    letter-spacing: -0.9px;
+}
+
+h2 {
+    font-family: $font-tiemposHeadline;
+    color: $gray-800;
+    font-size: 32px;
+    line-height: 1.375;
+}
+
+h4 {
+    color: $gray-800;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+}

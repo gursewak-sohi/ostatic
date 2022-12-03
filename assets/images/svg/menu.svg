@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="25px" viewBox="0 0 33 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menu</title>
+    <g id="Ostatic" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Mobile" transform="translate(-361.000000, -27.000000)" stroke="#0A1627" stroke-width="3.88000011">
+            <g id="Group" transform="translate(0.000000, 28.000000)">
+                <g id="menu" transform="translate(363.000000, 0.000000)">
+                    <line x1="0" y1="11.6111112" x2="28.8930566" y2="11.6111112" id="Path"></line>
+                    <line x1="0" y1="1.40111115" x2="28.8930566" y2="1.40111115" id="Path"></line>
+                    <line x1="0" y1="21.8211112" x2="28.8930566" y2="21.8211112" id="Path"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

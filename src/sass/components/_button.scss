@@ -1,0 +1,95 @@
+//  Button SCSS
+.btn {
+    cursor: pointer;
+    font-family: $font-inter;
+    border: none;
+    transition: $btn-transition;
+    background-color: transparent;
+    &:active {
+        transform: scale(0.95);
+    }
+    &:disabled:active {
+        transform: scale(1);
+    }
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+
+.btn-xs {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 3px;
+    padding: 8px 0 7px 0;
+    width: 91px;
+    height: 30px;
+    display: inline-block;
+    line-height: 15px;
+}
+
+.btn-md {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 3px;
+    padding: 15px 23px 16px;
+    display: inline-block;
+    line-height: 19px;
+}
+
+.btn-more {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 3px;
+    width: 140px;
+    height: 32px;
+    display: inline-block;
+    line-height: 19px;
+}
+
+.btn-primary {
+    background-color: $primary;
+    color: $white;
+    box-shadow: 0 2px 7px 3px rgba(41, 116, 229, 0.13);
+    &:hover {
+        background-color: lighten($primary, 10%);
+        color: $white;
+    }
+}
+
+.btn-white {
+    background-color: $white;
+    color: $primary;
+    &:hover {
+        background-color: lighten($gray-800, 85%);
+    }
+}
+
+.btn-light {
+    background-color: $primary-500;
+    color: $primary;
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
+}
+
+.badge {
+    background-color: rgba($primary, 10%);
+    color: $primary;
+    height: 26px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 1px 2px 0 2px;
+    text-align: center;
+    display: inline-block;
+    &.badge-light {
+        background-color: rgba($white, 15%);
+        color: $white;
+    }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="368px" viewBox="0 0 1920 368" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>CTA</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1920" height="368"></rect>
+        <linearGradient x1="100%" y1="50%" x2="0.266575169%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0.266575169%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Ostatic" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-60">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#0E6ADB" xlink:href="#path-1"></use>
+            <g mask="url(#mask-2)" id="Oval" opacity="0.149999991">
+                <g transform="translate(-370.000000, -798.000000)">
+                    <path d="M593,1186 C920.504857,1186 1186,920.504857 1186,593 C1186,265.495143 920.504857,0 593,0 C265.495143,0 0,265.495143 0,593 C0,920.504857 265.495143,1186 593,1186 Z M593,986 C375.952093,986 200,810.047907 200,593 C200,375.952093 375.952093,200 593,200 C810.047907,200 986,375.952093 986,593 C986,810.047907 810.047907,986 593,986 Z" fill="url(#linearGradient-3)"></path>
+                    <path d="M2068,1961 C2395.50486,1961 2661,1695.50486 2661,1368 C2661,1040.49514 2395.50486,775 2068,775 C1740.49514,775 1475,1040.49514 1475,1368 C1475,1695.50486 1740.49514,1961 2068,1961 Z M2068,1761 C1850.95209,1761 1675,1585.04791 1675,1368 C1675,1150.95209 1850.95209,975 2068,975 C2285.04791,975 2461,1150.95209 2461,1368 C2461,1585.04791 2285.04791,1761 2068,1761 Z" fill="url(#linearGradient-4)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

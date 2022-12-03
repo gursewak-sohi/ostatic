@@ -1,0 +1,29 @@
+// Slider SCSS
+.swiper-pagination {
+    position: absolute;
+    z-index: 10;
+    bottom: -32px;
+    column-gap: 10px;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    @include mobile {
+        display: flex;
+    }
+    & .swiper-pagination-bullet {
+        background-color: $white;
+        height: 2px;
+        width: 30px;
+        display: block;
+        transition: 0.3s all ease;
+        opacity: 0.3;
+        &.swiper-pagination-bullet-active {
+            background-color: $white;
+            height: 4px;
+            border-radius: 5px;
+            opacity: 1;
+        }
+    }
+}

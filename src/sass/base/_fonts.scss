@@ -1,0 +1,13 @@
+// Fonts SCSS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: "TiemposHeadline";
+    src: url("../fonts/TiemposHeadline/semibold.eot");
+    /* IE9*/
+    src: url("../fonts/TiemposHeadline/semibold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/TiemposHeadline/semibold.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/TiemposHeadline/semibold.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/TiemposHeadline/semibold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/TiemposHeadline/semibold.svg#TiemposHeadline-Semibold") format("svg");
+    /* iOS 4.1- */
+}

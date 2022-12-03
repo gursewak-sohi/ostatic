@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group_14</title>
+    <g id="Ostatic" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop" transform="translate(-311.000000, -8117.000000)" stroke-width="2">
+            <g id="Footer" transform="translate(156.000000, 7925.000000)">
+                <g id="Group" transform="translate(12.000000, 0.000000)">
+                    <g id="social-network-icons" transform="translate(9.000000, 178.000000)">
+                        <g id="instagram" transform="translate(120.000000, 0.000000)">
+                            <g id="Group_14" transform="translate(15.000000, 15.000000)">
+                                <rect id="Rectangle_26" stroke="#0E6ADB" x="0" y="0" width="15.069" height="15.069" rx="2.177"></rect>
+                                <path d="M10.552,7.06 C10.7443645,8.34600738 10.0902937,9.61040037 8.92952353,10.1964308 C7.76875335,10.7824613 6.36301077,10.5579928 5.44246345,9.63961826 C4.52191614,8.72124375 4.29412632,7.31603555 4.87741207,6.15388374 C5.46069782,4.99173194 6.72354163,4.33467501 8.01,4.524 C9.32335679,4.71728357 10.3556133,5.74710363 10.552,7.06 L10.552,7.06 Z" id="Path_2" stroke="#0E6ADB"></path>
+                                <line x1="11.679" y1="3.391" x2="11.679" y2="3.391" id="Line_1" stroke="#FFFFFF"></line>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

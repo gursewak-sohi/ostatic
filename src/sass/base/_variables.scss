@@ -1,0 +1,33 @@
+// Variable SCSS
+// Fonts
+$font-inter: ('Inter', sans-serif);
+$font-tiemposHeadline: ('TiemposHeadline', sans-serif);
+// Colors
+$bg: #FFFFFF;
+$white: #FFFFFF;
+$black: #000000;
+$primary: #0E6ADB;
+$primary-500: #E6F0FB;
+$gray-800: #0A1627;
+$gray-600: #4C525F;
+$gray-500: #6B778E;
+$gray-400: #BFC2C6;
+$gray-300: #EBEBEB;
+$gray-200: #ECECEC;
+$gray-150: #FAFAFA;
+$gray-100: #F9F9F9;
+// Breakpoints
+$mobile-width: 767px;
+$tablet-width: 1023px;
+$laptop-width: 1199px;
+$desktop-width: 1399px;
+// Container Sizes
+$container: 1191px;
+$gutter-x: 40px;
+$gutter-x-xs: 20px;
+// Transition
+$link-transition: 200ms all ease;
+$btn-transition: 300ms background-color ease,
+300ms color ease,
+300ms border-color ease,
+300ms opacity ease;

@@ -1,0 +1,112 @@
+// Header SCSS
+.header-section {
+    padding: 16.5px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid $gray-200;
+    background-color: rgba($white, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 90;
+    @include mobile {
+        padding: 25px 0;
+    }
+    & .header-block {
+        display: flex;
+        align-items: center;
+        & .logo {
+            margin-right: 49px;
+            @include tablet {
+                margin-right: 20px;
+            }
+        }
+        & .btn-toggle {
+            display: none;
+            margin-left: auto;
+            @include mobile {
+                display: flex;
+            }
+        }
+        & .header-collpase {
+            flex: 1;
+            display: flex;
+            @include mobile {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: rgba($white, 0.9);
+                backdrop-filter: blur(10px);
+                margin-top: 1px;
+                padding: 20px;
+            }
+            & .header-content {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+                @include mobile {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                & .header-search {
+                    width: 355px;
+                    height: 44px;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid $gray-200;
+                    background-color: $gray-100;
+                    padding: 0 16px 0 24px;
+                    border-radius: 22px;
+                    column-gap: 10px;
+                    @include mobile {
+                        width: 100%;
+                    }
+                    & input {
+                        flex: 1;
+                        height: 100%;
+                        border: none;
+                        background-color: transparent;
+                        color: $gray-500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        font-weight: 500;
+                        padding-bottom: 3px;
+                    }
+                }
+                & .header-buttons {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    position: relative;
+                    & .btn {
+                        @include mobile {
+                            width: 100%;
+                        }
+                    }
+                    @include mobile {
+                        flex-direction: column;
+                        margin-top: 20px;
+                        row-gap: 10px;
+                        align-items: flex-start;
+                        border-top: 1px solid $gray-300;
+                        width: 100%;
+                        padding-top: 20px;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: -12px;
+                        height: 19px;
+                        width: 1px;
+                        background-color: $gray-400;
+                        @include mobile {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
