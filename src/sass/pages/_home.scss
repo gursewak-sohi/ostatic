@@ -74,12 +74,13 @@
         position: absolute;
         left: 50%;
         bottom: -20px;
-        background-image: url(../images/svg/illustration-hero.svg);
+        background-image: url(../images/svg/illustration-hero.webp);
         width: 1481px;
         height: 606px;
         transform: translateX(-50%);
         margin-left: 194px;
         z-index: -1;
+        background-size: cover;
     }
     & .hero-block {
         padding: 70px 0 146px;
@@ -129,7 +130,13 @@
             & .blog-body {
                 display: flex;
                 flex-direction: column;
-                padding: 24px 24px 10px 24px;
+                padding: 24px;
+                & h4 a {
+                    color: $gray-800;
+                    &:hover {
+                        color: lighten($gray-800, 15%);
+                    }
+                }
                 & .author {
                     color: $primary;
                     font-size: 14px;
@@ -153,6 +160,11 @@
                 }
             }
         }
+    }
+    & .blog-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 34px;
     }
 }
 
